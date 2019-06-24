@@ -10,4 +10,4 @@ build:
 
 # test -- rebuild the Dockerfile and run the tests
 test:
-	sudo docker run holo-zato-apitest  apitest run /tests
+	sudo docker run --env-file=./env holo-zato-apitest  apitest run /tests
